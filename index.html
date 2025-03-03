@@ -44,9 +44,11 @@
     <section class="timeline">
         <h2>Our Love Timeline</h2>
         <ul>
-            <li><strong>2017:</strong> We met for the first time 💕</li>
-            <li><strong>2024:</strong> Our first trip together ✈️</li>
-            <li><strong>2020:</strong> Anniversary surprise 🎉</li>
+            <li style="animation-delay: 0.3s;">2018: We met for the first time 💖</li>
+            <li style="animation-delay: 0.6s;">2014: Our first trip together ✈️</li>
+            <li style="animation-delay: 0.9s;">2019: Anniversary surprise 🎉</li>
+
+
         </ul>
     </section>
 
@@ -65,7 +67,15 @@
     <section class="surprise">
         <button onclick="showMessage()">Click for a Surprise 💖</button>
         <p id="hiddenMessage" style="display:none; font-size: 20px; color: red;">
-            You are my everything! Love you! ❤️
+
+        </section>
+        <script>
+            function showMessage() {
+                document.getElementById('hiddenMessage').style.display = 'block';
+            }
+        </script>
+            <p>You are my everything! <span class="heart">❤️</span></p>
+
         </p>
     </section>
     <script>
