@@ -39,3 +39,7 @@ document.getElementById("surprise-btn").addEventListener("click", (event) => {
     createFirework(event.clientX, event.clientY);
     updateFireworks();
 });
+
+function showMessage() {
+    document.getElementById('hiddenMessage').style.display = 'block';
+}

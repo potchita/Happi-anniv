@@ -1,12 +1,13 @@
-/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #ff9a9e, #fad0c4);
     text-align: center;
+    background-color: #ffe6f2;
     margin: 0;
-    padding: 0;
-    color: #333;
+    padding: 20px;
+    /* REMOVE this line 👇 */
+    /* overflow: hidden; */
 }
+
 
 /* Header */
 header {
