@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
-
+    
     <header>
         <h1>Happy Anniversary, My BABY! ❤️</h1>
         <p>Our journey together is my favorite story.</p>
@@ -47,18 +47,30 @@
 
     <section class="surprise">
         <button onclick="showMessage()">Click for a Surprise 💖</button>
+        
         <div id="hiddenMessage" style="display:none; font-size: 20px; color: red;">
             You are my everything! <span class="heart">❤️</span>
-  
+        </div>
 
         <div class="slideshow">
             <img id="slide" src="pot3.jpg" alt="Memory">
+        </div>
     </section>
+
+    <!-- Add an audio element for sound -->
+    <audio id="surpriseSound">
+        <source src="wow.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
 
     <script>
         function showMessage() {
             // Show hidden message
             document.getElementById('hiddenMessage').style.display = 'block';
+
+            // Play sound
+            let sound = document.getElementById('surpriseSound');
+            sound.play().catch(error => console.log("Audio playback prevented:", error));
 
             // Fireworks effect (Confetti)
             confetti({
