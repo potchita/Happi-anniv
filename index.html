@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="slideshow">
+        <img id="slide" src="images/photo1.jpg" alt="Memory">
+    </div>
+    
+    <script>
+        let images = ["pot3.jpg", "pot4.jpg", "pot5.jpg"];
+        let index = 0;
+        
+        function changeImage() {
+            index = (index + 1) % images.length;
+            document.getElementById("slide").src = images[index];
+        }
+        
+        setInterval(changeImage, 3000); // Change image every 3 seconds
+    </script>
+    
+
+    <header>
+        <h1>Happy Anniversary, My BABY! ❤️</h1>
+        <p>Our journey together is my favorite story.</p>
+    </header>
+
+    <section class="gallery">
+        <h2>Our Beautiful Moments</h2>
+        <div class="images">
+            <img src="pot.jpg" alt="Our first date">
+            <img src="pot1.jpg" alt="Travel memories">
+            <img src="pot2.jpg" alt="Funny moments">
+        </div>
+    </section>
+
+    <section class="timeline">
+        <h2>Our Love Timeline</h2>
+        <ul>
+            <li><strong>2017:</strong> We met for the first time 💕</li>
+            <li><strong>2024:</strong> Our first trip together ✈️</li>
+            <li><strong>2020:</strong> Anniversary surprise 🎉</li>
+        </ul>
+    </section>
+
+    <section class="message">
+        <h2>A Special Message</h2>
+        <p>
+            Every moment with you is a blessing. From our first day to now, you have been my happiness.
+            I love you forever and always! ❤️
+        </p>
+    </section>
+
+    <footer>
+        <p>Made with 💖 for you.</p>
+    </footer>
+
+    <section class="surprise">
+        <button onclick="showMessage()">Click for a Surprise 💖</button>
+        <p id="hiddenMessage" style="display:none; font-size: 20px; color: red;">
+            You are my everything! Love you! ❤️
+        </p>
+    </section>
+    <script>
+        function showMessage() {
+            document.getElementById('hiddenMessage').style.display = 'block';
+        }
+    </script>
+    
+</body>
+</html>
